@@ -1,0 +1,9 @@
+Encodings and Interrupts:
+When we talk about encodings we are referring to the data we want to work on. In computer science everything is a number.
+But to make the relationship between the cute cat image and the bits sequences that is used to encode the image data.
+Integers are unsigned integers and signed integers, for the signed integers what we have is simply binary representation in a 
+positional system.
+For signed integers, we have two's complement representation of the number of bits in the number of bits
+n bits that we solve in the bytes of 8 bits each. n can be any number greater than 0.
+n = 8, n = 16, n = 32, n = 64, n = 128
+
