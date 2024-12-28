@@ -20,7 +20,7 @@ int get_stdin_id(char line[100]) {
 }
 
 int main() {
-  printf("Welcome to Ashkan's tokenizer!\n");
+  printf("Welcome to my tokenizer!\n");
   printf("Enter any sentence to see it tokenized.\n");
   printf(
       "To quit, enter 'q' (anything starting with 'q' ends the program. If you "
