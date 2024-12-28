@@ -5,6 +5,7 @@ void strncpy_ptr(char *s, const char *t, size_t n) {
         ;
     while (n-- > 0)  // Null-terminate if t is shorter than n
         *s++ = '\0';
+    *s = '\0';  // Ensure s is always null-terminated
 }
 
 void strncat_ptr(char *s, const char *t, size_t n) {
@@ -12,7 +13,7 @@ void strncat_ptr(char *s, const char *t, size_t n) {
         s++;
     while (n-- && (*s++ = *t++))  // Append up to n characters
         ;
-    *s = '\0';
+    *s = '\0';  // Ensure the null-terminator is added
 }
 
 int strncmp_ptr(const char *s, const char *t, size_t n) {
