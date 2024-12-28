@@ -25,17 +25,3 @@ void print_triangle(int leftCol, int size)
     putchar('\n');
   }
 }
-
-// TODO: finish print_triangle
-/* void print_arrow(int leftCol, int size) */
-/* { */
-/*   // head of arrow */
-/*   for (int row = 0; row <= size / 2; row++) { */
-/*     int minCol = leftCol + size - row; */
-/*     int maxCol = leftCol + size + row; */
-/*     int col; */
-/*     for (col = 0; col < minCol; col++) putchar(' '); */
-/*     for (col =  */
-/*   } */
-/*   // tail of arrow */
-/* } */
