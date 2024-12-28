@@ -1,6 +1,5 @@
-Here is a basic README file for the provided project structure:
 
-`# Project Name
+# Project Name
 
 This repository contains various C programming language files and tools for learning and development. Below is an overview of the files and their functionality.
 
