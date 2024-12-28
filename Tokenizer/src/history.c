@@ -10,20 +10,14 @@ List* init_history() {
 }
 
 char *copy_line(char *str) {
-  // allocate heap memory for 100 chars
-  // NOTE: line size is hard-coded; I'm a lazy idiot.
   char *newstr = malloc(sizeof(char) * 100);
-  // copy string --> \0 is already included
   for (int i = 0; i < 100; i++) {
     newstr[i] = str[i]; 
   }
-  // return pointer
   return newstr;
 }
 
 void add_history(List *list, char *str) {
-
-  // alternate improved logic
   int id_counter = 0;
   if (list->root == NULL) {
     list->root = malloc(sizeof(Item)); // allocate for list->root (Item)
@@ -93,14 +87,9 @@ void print_history(List *list) {
   }
 }
 
-// can't be recursive:
-// it's passing a list, NOT an item!
 void free_history(List *list) {
-  // free all list items until nothing left
   Item* histitem = list->root;
   while (histitem != NULL) {
-    // id doesn't need to be freed since it's a ptr
-    // by freeing histitem (or a copy), id will be freed as well
     free(histitem->str);
 
     // copy histitem pointer to temp
